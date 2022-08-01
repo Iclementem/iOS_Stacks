@@ -21,13 +21,37 @@ struct ContentView: View {
                 .padding()
                 .background(Color.indigo)
             Spacer()
-            HStack {
+            ZStack { //Esto es un STACK DE PROFUNDIDAD.
+                Text("")
+                    .frame(maxWidth:.infinity, maxHeight:.infinity)
+                    .background(Color.pink)
+                    .padding(20)
+                Text("")
+                    .frame(maxWidth:.infinity, maxHeight:.infinity)
+                    .background(Color.gray)
+                    .padding(60)
+                Text("")
+                    .frame(maxWidth:.infinity, maxHeight:.infinity)
+                    .background(Color.cyan)
+                    .padding(80)
+                Text("")
+                    .frame(maxWidth:.infinity, maxHeight:.infinity)
+                    .background(Color.green)
+                    .padding(100)
+                Text("")
+                    .frame(maxWidth:.infinity, maxHeight:.infinity)
+                    .background(Color.red)
+                    .padding(120)
+            }
+            HStack { //Esto es un STACK HORIZONTAL.
                 Text("Primera linea. Stack horizontal. (HStack)")
                     .padding()
                     .background(Color.brown)
                 Text("Segunda linea. Stack horizontal. (HStack)")
                     .padding()
                     .background(Color.green)
+            Spacer()
+            
             }
             
         }.background(Color.yellow).padding()
